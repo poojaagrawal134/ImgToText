@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:id="@+id/imageView"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:layout_height="100dp"
+        android:id="@+id/textlay"
+        android:background="#0C0C0C"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/imageView"
+        android:text="Your Text"
+
+        android:textSize="18sp"
+
+        android:id="@+id/rectext"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/textlay"
+ android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture\nImage"
+            android:id="@+id/capture"
+            android:layout_marginLeft="30dp"
+            android:textAlignment="center"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recognise\nText"
+            android:layout_marginLeft="45dp"
+            android:id="@+id/recogniseButton"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+</RelativeLayout>
